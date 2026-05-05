@@ -88,12 +88,6 @@ afficherPrenom("David")
 //parametre: une adresse mail à verifier
 //return: rien car elle affiche
 
-function verifMail(MailAverif){
-    console.log(MailAverif.includs("@"))
-
-}
-
-verifMail("contact@gmail.com")
 
 
 //EX6
@@ -101,16 +95,84 @@ verifMail("contact@gmail.com")
 //parametre: deux valeur 
 //return: additioner
 
-function sommes ( a, b){
+function addition ( a, b){
     return (a+b);
 }
 
-let valeur =(10 + 34);
+let resultat =addition(10 , 34);
 
-console.log(valeur)
+console.log(resultat)
 
-
+/*
 //EX7
 //role : poser une question 
 //parametre : une question
-//return:
+//return: réponse
+
+function poseQuestion(question){
+  let rep = prompt(question)
+  return rep
+  
+}
+
+let reponse = poseQuestion("Quel jour sommes nous ?")
+
+console.log(reponse)
+
+*/
+/*
+//EX8
+//role : convertir un prix en $
+//paramettre : le prix en € et le taux de change
+//return: le prix converti
+
+function convertion (prix, taux){
+
+    return prix * taux;    
+}
+
+let resultatDol = convertion(3, 1.17)
+
+console.log(`le prix converti est de ${resultatDol} dollar`)
+
+*/
+/*
+//role : demander un prix et un taux e change à l'utilisateur et convertit le prix
+//parametre : 
+//return : prix converti
+
+function convertisseur(){
+
+    //demande le prix converti
+   let prix = parseFloat(prompt("Quel prix veux-tu convertir?"))
+
+    //demadne le taux
+    let taux = parseFloat(prompt ("à quel taux"))
+
+    // convertit
+    return prix * taux
+
+    //retourne le resultat
+
+}
+let prixConverti = convertisseur()
+
+alert(`Le prix converti est de ${prixConverti}`)
+
+*/
+//role : calculer la moyenne de l'eleve a partir de 4 notes donner par l'utilisateur
+//parametre:
+//return : la moyenne de l'eleve
+
+function MoyenneGen (){
+    let noteMath = parseFloat(prompt("Quel est la moyenne en Math ?"))
+    let noteFr = parseFloat(prompt("Quel est la moyenne en Français ?"))
+    let noteHistoire = parseFloat(prompt("Quel est la moyenne en Histoire ?"))
+    let noteSvt = parseFloat(prompt("Quel est la moyenne en SVT ?"))
+
+    return (noteMath + noteFr + noteHistoire + noteSvt) /4;
+}
+
+let MoyenneCal = MoyenneGen()
+
+alert(`La moyenne de l'élève est de ${MoyenneCal}`)
