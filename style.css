@@ -26,3 +26,27 @@
 .txt-center{
     text-align: center;
 }
+
+.red{
+    color: red;
+}
+
+.display-none{
+    display: none;
+}
+
+.boite{
+    border:solid;
+    border-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.gap-40{
+    gap: 40px;
+}
+
+
+.bg-red{
+    background-color: red;
+}
